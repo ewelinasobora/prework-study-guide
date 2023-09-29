@@ -17,8 +17,13 @@ footer {
 }
 
 h1,
+h2,
+h3 {
+  text-align: center;
+}
+
 h2 {
-    text-align: center;
+  padding: 10px;
 }
 
 img {
@@ -41,19 +46,10 @@ p {
 
 .container {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.row {
-  display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
 }
-
-.row > div[class*='col-'] {
- display: flex;
-}
-
 
 .cards {
   display: grid;
@@ -62,16 +58,9 @@ p {
 }
 
 .card {
-  /* width: 10%; */
-  /* width: 100px;
-  height: 100px; */
-  width: 120%;
-  justify-content: space-around;
-  /* padding: 50px 0; */
-  display: flex;  /* width: 120%; */
-  margin: 80px auto;
-  border: 5px solid darkblue;
+  width: 100%;
+  margin: 100px auto;
+  border: 8px solid darkblue;
   box-shadow: 5px 10px #888888;
-  display: grid;
-  grid-template-rows: max-content 600px 4fr;
+  display: block;
 }
